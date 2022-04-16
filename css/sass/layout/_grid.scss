@@ -1,0 +1,26 @@
+*{
+    @include perfixer(box-sizing, border-box, moz webkit);
+}
+
+.continer
+{
+    width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+
+    @media #{$minSmail} {
+        width: 750px;
+    }
+    @media #{$minMedumi} {
+        width: 970px;
+    }
+    @media #{$minLarege} {
+        width: 1170px;
+    }
+}
+.clearfix 
+{
+    clear: both;
+}

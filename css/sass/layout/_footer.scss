@@ -1,0 +1,97 @@
+.footer
+{
+    background-color: #e2e2e2;
+    overflow-x: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    .gallrey, .info, .contact
+    {
+        float: $float-left;
+    }
+    .gallrey {
+        width: 50%;
+        .img-box {
+            overflow: hidden;
+            img {
+                float: $float-left;
+                width: 150px;
+                height: 150px;
+                margin-bottom: 4px;
+            }
+            .text {
+                float: $float-left;
+                margin-right: 15px;
+                margin-left: 15px;
+                width: calc(100% - 180px);
+                
+                h3 {
+                    color: $redColor;
+                    margin: 20px 0 0;
+                   
+                }
+                p {
+                    color: $greyColor;
+                    line-height: 1.9;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .info {
+        width: 25%;
+        ul {
+            color: #888;
+            line-height: 1.6;
+            li {
+                span {
+                    color: $redColor;
+                }
+            }
+        }
+        h4 {
+            color: #888;
+            font-weight: bold;
+        }
+        p {
+            color: #888;
+        }
+    }
+    .contact {
+        width: 25%;
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            border: none;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 15px;
+            width: 100%;
+            box-shadow: 5px 5px 5px 0 #e2e2e2;
+        }
+        textarea {
+            height: 140px;
+        }
+    }
+    .section-title {
+        font-weight: normal;
+        color: #444;
+        
+       
+    }
+    .copywhite 
+    {
+        padding: 15px 0;
+        border-top: 1px solid #c5c5c5;
+        color: #888;
+        overflow: hidden;
+        .copy-text, .copy-auther {
+            float: $float-left;
+            width: 50%;
+        }
+        .copy-auther {
+            text-align: $text-right;
+        }
+    }
+
+}
